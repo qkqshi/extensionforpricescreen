@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Steam Screenshot</h1>
+        <p class="desc">Capture price info from the current Steam game page.</p>
+        
+        <div class="options">
+            <label class="checkbox-label">
+                <input type="checkbox" id="includeDlc" checked>
+                <span>Include DLC & Bundles</span>
+            </label>
+        </div>
+
+        <button id="captureBtn" class="btn-primary">
+            <span class="icon">📷</span> Capture Price
+        </button>
+        
+        <p id="status" class="status"></p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Price Screenshot",
+  "version": "1.2",
+  "description": "Captures Steam prices.",
+  "permissions": ["activeTab", "scripting", "downloads"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://store.steampowered.com/app/*"],
+      "js": ["html2canvas.min.js", "content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["html2canvas.min.js"],
+      "matches": ["*://store.steampowered.com/*"]
+    }
+  ]
+}
